@@ -17,7 +17,7 @@ Style the h1 heading with:
     42px centered font 
     Padding of 15px 
 */
-body h1 {
+h1 {
     font-size: 42px;
     text-align: center;
     padding: 15px;
@@ -63,13 +63,11 @@ Style the default div elements with:
     Padding of 20px on all sides
 A 3px solid white border on all sides.
  */
-div[class] {
+div {
     height: auto;
     min-height: 125px;
-    padding: 20px;
-    border: 3px;
-    border-color: #ffffff;
-    border-style: solid;
+    border: 3px solid #ffffff;
+    padding: 20px !important;
 }
 
 /* 
@@ -79,6 +77,7 @@ Style the introduction class with:
     Double-spaced text
  */
 .introduction {
+    border: 3px solid #ffffff;
     border-radius: 15px;
     margin-top: 15px;
     line-height: 2;
@@ -91,12 +90,13 @@ Style the red class with:
     A left margin of 50px;
     A  border of 2px on the bottom and 5px on the left;
  */
-[class="red"] {
+.red {
     background-color: #FF0000;
     text-align: right;
     margin-left: 50px;
     border-bottom: 2px;
     border-left: 5px;
+    border-style: solid;
 }
 
 /* 
@@ -112,6 +112,7 @@ The blue div has the following styles
     margin-right: 50px;
     border-right: 5px;
     border-top: 2px;
+    border-style: solid;
 }
 
 /* 
@@ -135,6 +136,7 @@ The yellow div has the following styles
     margin-left: 50px;
     border-bottom: 2px;
     border-left: 5px;
+    border-style: solid;
 }
 
 /* 
@@ -158,6 +160,7 @@ The green div has the following styles:
     margin-right: 50px;
     border-right: 5px;
     border-top: 2px;
+    border-style: solid;
 }
 
 /* 
@@ -167,6 +170,7 @@ Style the default footer elements with:
  */
 footer {
     background-image: linear-gradient(to right, #000000, #0000FF 25%, #0066FF 70%, #000000);
+    border: 5px solid #ffffff;
 }
 
 /* 
@@ -177,5 +181,5 @@ Style any paragraphs within the footer with:
 footer p {
     font-size: 20px;
     text-align: right;
-    padding: 15px 15px 15px 0px;
+    padding: 15px 15px 15px 0px !important;
 }
